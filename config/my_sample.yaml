@@ -1,0 +1,69 @@
+# Competition configuration options
+options:
+  insert_models_over_bins: true
+  belt_population_cycles: 3
+
+
+orders:
+  order_0:
+    announcement_condition: time
+    announcement_condition_value: 0.0
+    products:
+      part_0:
+        type: gasket_part
+        pose:
+          xyz: [0.1, -0.1, 0]
+          rpy: [0, 0, 0]
+      part_1:
+        type: gear_part
+        pose:
+          xyz: [-0.1, 0, 0]
+          rpy: [0, 0, 'pi']
+      part_2:
+        type: gear_part
+        pose:
+          xyz: [-0.1, 0.15, 0]
+          rpy: [0, 0, 0]
+
+models_over_bins:
+  bin3:
+    models:
+      gear_part:
+        xyz_start: [0.1, 0.1, 0.0]
+        xyz_end: [0.5, 0.5, 0.0]
+        rpy: [0, 0, 0]
+        num_models_x: 3
+        num_models_y: 4
+  bin4:
+    models:
+      gasket_part:
+        xyz_start: [0.1, 0.2, 0.0]
+        xyz_end: [0.4, 0.5, 0.0]
+        rpy: [0, 0, 'pi/4']
+        num_models_x: 2
+        num_models_y: 3
+  bin2:
+    models:
+      piston_rod_part:
+        xyz_start: [0.1, 0.15, 0.0]
+        xyz_end: [0.35, 0.45, 0.0]
+        rpy: [0, 0, 'pi/4']
+        num_models_x: 3
+        num_models_y: 3
+
+belt_models:
+  gasket_part:
+    1.0:
+      pose:
+        xyz: [0.0, 0.0, 0.1]
+        rpy: [0, 0, 'pi/2']
+  gear_part:
+    5.0:
+      pose:
+        xyz: [0.0, 0.0, 0.1]
+        rpy: [0, 0, 'pi/2']
+
+faulty_products:
+  - piston_rod_part_5  # this product gets spawned in the tutorial
+
+time_limit: -1

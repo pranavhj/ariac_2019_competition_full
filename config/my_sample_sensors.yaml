@@ -1,0 +1,65 @@
+sensors:
+  # break_beam_1:
+  #   type: break_beam
+  #   pose:
+  #     xyz: [1.6, 2.25, 0.91]
+  #     rpy: [0, 0, 'pi']
+  # proximity_sensor_1:
+  #   type: proximity_sensor
+  #   pose:
+  #     xyz: [0.95, 2.6, 0.92]
+  #     rpy: [0, 0, 0]
+  logical_camera_1:
+    type: logical_camera
+    pose:
+      xyz: [-0.685352, -1.916, 1.038233]
+      rpy: [1.566555, 0.799728, 0.007013]
+  logical_camera_2:
+    type: logical_camera
+    pose:
+      xyz: [-0.685352, -1.15, 1.038233]
+      rpy: [1.566555, 0.799728, 0.007013]
+  logical_camera_3:
+    type: logical_camera
+    pose:
+      xyz: [-0.685352, -0.383, 1.038233]
+      rpy: [1.566555, 0.799728, 0.007013]
+  logical_camera_4:
+    type: logical_camera
+    pose:
+      xyz: [1.481091, 0.407242, 1.245074]
+      rpy: [-1.564375, 1.103416, -3.125869]
+  logical_camera_5:
+    type: logical_camera
+    pose:
+      xyz: [-0.685352, 0.383, 1.038233]
+      rpy: [1.566555, 0.799728, 0.007013]
+  logical_camera_6:
+    type: logical_camera
+    pose:
+      xyz: [-0.685352, 1.15, 1.038233]
+      rpy: [1.566555, 0.799728, 0.007013]
+  logical_camera_7:
+    type: logical_camera
+    pose:
+      xyz: [-0.685352, 1.916, 1.038233]
+      rpy: [1.566555, 0.799728, 0.007013]
+
+  logical_camera_8:
+    type: logical_camera
+    pose:
+      xyz: [0.303349, 3.107138, 1.302731]
+      rpy: [-0.291022, 1.564350, 2.851004]
+  logical_camera_9:
+    type: logical_camera
+    pose:
+      xyz: [0.303349, -3.107138, 1.302731]
+      rpy: [-0.291022, 1.564350, 2.851004]
+  # laser_profiler_1:
+  #   type: laser_profiler
+  #   pose:
+  #     xyz: [1.21, 4, 1.6]
+  #     rpy: ['-pi', 'pi/2', 'pi/2']
+
+
+
